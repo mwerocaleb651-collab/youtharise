@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+no<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -58,3 +58,11 @@
       </p>
     </div>
     <script src="app.js"></script>
+    <script>
+      // Display error message if present in URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const error = urlParams.get('error');
+      if (error) {
+        document.getElementById('signin-message').textContent = decodeURIComponent(error);
+      }
+    </script>

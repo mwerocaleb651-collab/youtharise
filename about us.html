@@ -1,20 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | YouthArise Manpower Ltd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <style>
+      :root {
+        --primary: #471894;
+        --primary-dark: #2d0d67;
+        --accent: #f59e0b;
+        --white: #ffffff;
+        --text: #1f2937;
+        --muted: #5b6475;
+        --soft: #f5f3ff;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #f8f7ff 0%, #edf4ff 100%);
+        color: var(--text);
+      }
+
+      .page {
+        min-height: 100vh;
+        padding: 40px 20px 80px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+      }
+
+      .brand {
+        font-size: 1.7rem;
+        font-weight: 800;
+        color: var(--primary-dark);
+        text-decoration: none;
+      }
+
+      .nav {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: var(--primary-dark);
+        background: rgba(71, 24, 148, 0.08);
+        padding: 10px 16px;
+        border-radius: 999px;
+        font-weight: 600;
+      }
+
+      .hero {
+        background: linear-gradient(120deg, rgba(91, 33, 182, 0.95), rgba(59, 130, 246, 0.85));
+        border-radius: 28px;
+        padding: 60px 40px;
+        color: var(--white);
+        box-shadow: 0 25px 45px rgba(71, 24, 148, 0.18);
+      }
+
+      .hero h1 {
+        font-size: clamp(2.2rem, 4vw, 4rem);
+        line-height: 1.2;
+        margin-bottom: 18px;
+      }
+
+      .hero p {
+        max-width: 720px;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: rgba(255,255,255,0.9);
+      }
+
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+        gap: 28px;
+        margin-top: 30px;
+      }
+
+      .card {
+        background: var(--white);
+        border-radius: 22px;
+        padding: 30px;
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+      }
+
+      .card h2 {
+        font-size: 1.9rem;
+        color: var(--primary-dark);
+        margin-bottom: 18px;
+      }
+
+      .card p,
+      .card li {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.9;
+      }
+
+      .card ul {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 18px;
+      }
+
+      .card li {
+        margin-bottom: 12px;
+        padding-left: 22px;
+        position: relative;
+      }
+
+      .card li::before {
+        content: '•';
+        color: var(--accent);
+        font-size: 1.6rem;
+        position: absolute;
+        left: 0;
+        top: -4px;
+      }
+
+      .info-box {
+        background: var(--soft);
+        border: 1px solid rgba(71, 24, 148, 0.08);
+      }
+
+      .info-box h3 {
+        font-size: 1.4rem;
+        margin-bottom: 18px;
+        color: var(--primary-dark);
+      }
+
+      .info-box p {
+        margin-bottom: 14px;
+        line-height: 1.8;
+      }
+
+      .highlight {
+        display: inline-block;
+        background: rgba(245, 158, 11, 0.12);
+        color: var(--primary-dark);
+        padding: 6px 12px;
+        border-radius: 999px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .content-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          padding: 40px 22px;
+        }
+      }
     </style>
-    <meta charset="UTF-8">
-    <title>About Us</title>
-    <h1>company email: youtharise111@gmail.com</h1>
-    <h2>Office Location: Mrong'ondoni</h2>
-    <h3>Address:
-        P.O. BOX 90382-80100
-        MOMBASA, KENYA.
-        Office: bypass 47
-        Enterprises road
-        Tell no.0769981550
-    </h3>
-</head>
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <div class="topbar">
+          <a href="index.html" class="brand">YouthArise Manpower Ltd</a>
+          <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about us.html">About</a>
+            <a href="signin.html">Sign In</a>
+            <a href="Sign Up.html">Sign Up</a>
+          </nav>
+        </div>
+
+        <section class="hero">
+          <span class="highlight">Who We Are</span>
+          <h1>Empowering communities through opportunity and growth.</h1>
+          <p>
+            YouthArise Manpower Ltd is a dynamic company dedicated to delivering quality manpower,
+            skills development, and sustainable solutions that support progress in Kenya and beyond.
+            We believe in creating pathways for growth, innovation, and long-term impact.
+          </p>
+        </section>
+
+        <div class="content-grid">
+          <div class="card">
+            <h2>Our Mission</h2>
+            <p>
+              To connect talent, opportunity, and service excellence while helping individuals and
+              organizations achieve lasting success through reliable manpower solutions and community-driven growth.
+            </p>
+            <ul>
+              <li>Quality manpower and service support</li>
+              <li>Professional and reliable workforce solutions</li>
+              <li>Commitment to integrity, growth, and excellence</li>
+            </ul>
+          </div>
+
+          <aside class="card info-box">
+            <h3>Company Information</h3>
+            <p><strong>Email:</strong> youtharise111@gmail.com</p>
+            <p><strong>Location:</strong> Mrong'ondoni</p>
+            <p><strong>Address:</strong> P.O. Box 90382-80100, Mombasa, Kenya</p>
+            <p><strong>Office:</strong> Bypass 47, Enterprises Road</p>
+            <p><strong>Phone:</strong> 0769981550</p>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
 
-  

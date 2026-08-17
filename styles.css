@@ -1,5 +1,5 @@
 :root {
-  --primary: #471894;
+  --primary: #cfc6dd;
   --primary-dark: #aa9dbe;
   --accent: #f59e0b;
   --text: #041123;
@@ -22,7 +22,9 @@ body {
 .hero {
   min-height: 100vh;
   padding: 24px 6vw 60px;
-  background: linear-gradient(120deg, rgba(91, 33, 182, 0.95), rgba(59, 130, 246, 0.85));
+  background:
+    linear-gradient(120deg, rgba(91, 33, 182, 0.82), rgba(59, 130, 246, 0.78)),
+    url('YR1.jpg') center/cover no-repeat;
   color: white;
 }
 
